@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+</head>
+<body>
+    <p>Hi...its done.</p>
+    <ul>
+        {% for occupation in occupations %}
+        <li><a href="{% url 'occupation_detail' pk=occupation.pk %}">{{ occupation.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
