@@ -6,11 +6,15 @@
     <title>Main Page</title>
 </head>
 <body>
-    <p>Hi...its done.</p>
-    <ul>
-        {% for occupation in occupations %}
-        <li><a href="{% url 'occupation_detail' pk=occupation.pk %}">{{ occupation.name }}</a></li>
-        {% endfor %}
-    </ul>
+    <div class="content">
+        <p>Hi...its done.</p>
+    </div><!--end content-->
+    <div class="occupation_names">
+        <ul>
+            {% for occupation in occupations %}
+            <li><a href="{% url 'occupation_detail' pk=occupation.pk %}">{{ occupation.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div><!--end occupation_names-->
 </body>
 </html>

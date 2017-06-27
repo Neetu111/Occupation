@@ -9,7 +9,7 @@ class Occupation(models.Model):
     def __str__(self):
         return self.name
 
-class Occupation_Detail_Form(models.Model):
+class Occupation_Detail(models.Model):
     owner_name = models.CharField(max_length= 100)
     owner_city = models.CharField(max_length= 100)
     owner_state = models.CharField(max_length=100)

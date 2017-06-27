@@ -5,6 +5,13 @@
     <title>Occupation Detail</title>
 </head>
 <body>
-    <p>Ho gya</p>
+    <div class="login_form" name="login_form" method="POST" >
+        <form method="POST" class="lg_form" action="occupation_page">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <br />
+            <button type="submit" class="save btn btn-default">Save</button>
+        </form><!--end form-->
+    </div><!--end login_form-->
 </body>
 </html>
